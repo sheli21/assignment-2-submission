@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* base styles */
+
+* {
+    box-sizing: border-box;
+}
+/* I am not sure about this cos it doesnt seem to do anything with % but I am trying to get all my content centered - and it's not happening and I cannot figure out why*/
+.centered {
+	width: 100%;
+	margin: 0px auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.flavor{
+	position: absolute;
+	top: 0;
+	right:0;
+	margin-top:0;
+	border: 1px solid black;
+	padding: 0 10% 0 10%;
+}
+
+.chicken{
+	background: pink;
+}
+
+.beef{
+	background: brown;
+	color:white;
+}
+
+.sushi{
+	background:orange;
+}
+
+#one, #two, #three {
+	border: solid 1px black;
+	margin: 2%;
+	position: relative;
+	background: gray;
+	float:left;
+}
+
+p{
+	margin-top: 5%;
+	padding: 8% 2% 2% 2%;
+	
+}
+
+/* desktop styles -  992px and above*/
+@media (min-width:992px){
+	#one, #two, #three {
+	width: 25%;}
+}
+
+/* tabletstyles - between 768px and 991px*/
+@media (min-width:768px) and (max-width:991px){
+	div {
+		float:left;
+	}
+	
+	#one, #two{
+	width: 45%;
+	}
+	
+	#three {
+	width:94%;
+	}
+	
+		#one p, #two p{
+	margin-top: 5%;
+	padding: 4% 2% 2% 2%;
+}
+			#three  p{
+	margin-top: 4%;
+	padding: 1%;
+}
+	
+}
+
+/* mobile - equal to or less than 767px*/
+
+@media (max-width:767px) {
+	#one, #two, #three {
+		width:90%;
+	}
+	p{
+	margin-top: 5%;
+	padding: 2%;
+	
+}
+	
+	}
+	
